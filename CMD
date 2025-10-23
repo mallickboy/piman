@@ -1,0 +1,9 @@
+cat /sys/devices/platform/cooling_fan/hwmon/hwmon2/fan1_input
+cat /sys/devices/platform/cooling_fan/hwmon/hwmon2/pwm1
+vcgencmd measure_volts
+vcgencmd measure_temp
+cgencmd measure_clock arm
+
+pip install RPi.GPIO
+
+sudo apt-get install python3-dev python3-setuptools python3-pip build-essential libgpiod2
