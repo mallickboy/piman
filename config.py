@@ -13,6 +13,7 @@ else:
     env_path = None
 
 if env_path:
+    print(f"Loading from {env_path}")
     load_dotenv(dotenv_path=env_path)
 else:
     print("[info] No .env or .env.defaults found.... \nUsing internal defaults.")

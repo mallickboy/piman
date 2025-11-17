@@ -63,6 +63,26 @@ The application will:
 
 - Use internal defaults if neither file is found
 
+## Start
+Setup virtual environment
+Recommended python 3.10
+```python3.10 venv .venv```
+
+Activate virtual environment
+```source .venv/bin/activate```
+
+Run application
+```python main.py```
+
+## GPIO setup
+```bash
+sudo apt install build-essential python3.10-dev liblgpio-dev git
+git clone https://github.com/joan2937/lgpio.git
+cd lgpio
+pip install .
+```
+***Need to fix this as lgpio works with linux though not so compatable with venv with pip***
+
 ## 📜 License
 This project is licensed under the Apache License 2.0.
 
